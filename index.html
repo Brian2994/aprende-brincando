@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprender Brincando: plataforma educativa divertida para crianças de 4 anos.">
+    <meta name="theme-color" content="#58b8f5">
+    <title>Aprender Brincando | Educação Infantil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#inicio" aria-label="Aprender Brincando - Início">
+                <span class="brand-icon" aria-hidden="true">🌈</span>
+                <span>Aprender Brincando</span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+                <span class="sr-only">Abrir menu</span>
+                <span aria-hidden="true">☰</span>
+            </button>
+
+            <nav id="main-menu" class="main-nav" aria-label="Navegação principal">
+                <a class="nav-link active" href="#inicio">Início</a>
+                <a class="nav-link" href="#rotina">Rotina</a>
+                <a class="nav-link" href="#alfabeto">Alfabeto</a>
+                <a class="nav-link" href="#vogais">Vogais</a>
+                <a class="nav-link" href="#cores">Cores</a>
+                <a class="nav-link" href="#numeros">Números</a>
+                <a class="nav-link" href="#jogos">Jogos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section id="inicio" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="eyebrow">✨ Uma aventura para aprender</span>
+                    <h1>Aprender pode ser uma grande aventura!</h1>
+                    <p>Uma rotina divertida para crianças de 4 anos aprenderem brincando, explorando letras, cores,
+                        vogais e números.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#rotina">🚀 Começar Agora</a>
+                        <a class="btn btn-secondary" href="#jogos">🎮 Jogar</a>
+                    </div>
+                    <div class="hero-stats" aria-label="Conteúdo disponível">
+                        <div><strong>26</strong><span>letras</span></div>
+                        <div><strong>5</strong><span>vogais</span></div>
+                        <div><strong>10</strong><span>números</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-art" aria-label="Ilustração de uma criança aprendendo" role="img">
+                    <div class="sun" aria-hidden="true">☀️</div>
+                    <div class="cloud cloud-one" aria-hidden="true">☁️</div>
+                    <div class="cloud cloud-two" aria-hidden="true">☁️</div>
+                    <div class="rainbow" aria-hidden="true">🌈</div>
+                    <div class="book" aria-hidden="true">
+                        <span>ABC</span>
+                        <span>123</span>
+                    </div>
+                    <div class="child" aria-hidden="true">🧒</div>
+                    <div class="star star-one" aria-hidden="true">⭐</div>
+                    <div class="star star-two" aria-hidden="true">✨</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rotina" class="section section-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">📅 Nossa semana</span>
+                    <h2>Uma rotina cheia de descobertas</h2>
+                    <p>Escolha um dia e descubra uma atividade especial para aprender brincando.</p>
+                </div>
+
+                <div id="routine-grid" class="routine-grid" aria-live="polite"></div>
+
+                <div class="activity-controls">
+                    <button id="previous-activity" class="btn btn-outline" type="button">← Voltar</button>
+                    <button id="next-activity" class="btn btn-primary" type="button">Próxima Atividade →</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="alfabeto" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">🔤 Letras divertidas</span>
+                    <h2>Vamos descobrir o alfabeto?</h2>
+                    <p>Toque ou clique em uma letra para descobrir uma palavra.</p>
+                </div>
+
+                <div id="alphabet-grid" class="alphabet-grid" aria-label="Alfabeto"></div>
+
+                <div id="alphabet-detail" class="learning-detail" aria-live="polite">
+                    <div class="detail-illustration">🐝</div>
+                    <div>
+                        <span class="detail-label">Exemplo</span>
+                        <h3>A — Abelha</h3>
+                        <p>A de <strong>Abelha</strong>! A abelha faz zumbido e ajuda as flores. 🐝</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vogais" class="section section-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">🎵 Sons das palavras</span>
+                    <h2>As cinco vogais</h2>
+                    <p>Clique em uma vogal para descobrir uma palavra.</p>
+                </div>
+                <div id="vowels-grid" class="vowels-grid"></div>
+            </div>
+        </section>
+
+        <section id="cores" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">🎨 Mundo colorido</span>
+                    <h2>Vamos brincar com as cores?</h2>
+                    <p>Descubra cada cor e um objeto que combina com ela.</p>
+                </div>
+                <div id="colors-grid" class="colors-grid"></div>
+            </div>
+        </section>
+
+        <section id="numeros" class="section section-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">🔢 Contando juntos</span>
+                    <h2>Os números de 1 a 10</h2>
+                    <p>Clique em um número e conte as figuras.</p>
+                </div>
+                <div id="numbers-grid" class="numbers-grid"></div>
+            </div>
+        </section>
+
+        <section id="jogos" class="section games-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">🎮 Hora de jogar</span>
+                    <h2>Desafios do pequeno explorador</h2>
+                    <p>Responda aos desafios e ganhe estrelas!</p>
+                </div>
+
+                <div class="progress-panel">
+                    <div class="progress-top">
+                        <div>
+                            <span class="progress-label">Seu progresso</span>
+                            <strong id="score">0 pontos ⭐</strong>
+                        </div>
+                        <span id="progress-percent">0%</span>
+                    </div>
+                    <div class="progress-track" aria-label="Progresso das atividades">
+                        <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+                    </div>
+                    <div id="badges" class="badges" aria-live="polite"></div>
+                </div>
+
+                <div class="games-grid">
+                    <article class="game-card">
+                        <div class="game-icon" aria-hidden="true">🎨</div>
+                        <span class="game-tag">Jogo 1</span>
+                        <h3>Jogo das Cores</h3>
+                        <p id="color-question">Qual é a cor vermelha?</p>
+                        <div id="color-options" class="game-options"></div>
+                        <div id="color-feedback" class="feedback" aria-live="polite"></div>
+                    </article>
+
+                    <article class="game-card">
+                        <div class="game-icon" aria-hidden="true">🔤</div>
+                        <span class="game-tag">Jogo 2</span>
+                        <h3>Jogo das Letras</h3>
+                        <p>Qual é esta letra?</p>
+                        <div id="letter-target" class="letter-target" aria-label="Letra do desafio">A</div>
+                        <div id="letter-options" class="game-options"></div>
+                        <div id="letter-feedback" class="feedback" aria-live="polite"></div>
+                    </article>
+
+                    <article class="game-card">
+                        <div class="game-icon" aria-hidden="true">🔢</div>
+                        <span class="game-tag">Jogo 3</span>
+                        <h3>Jogo dos Números</h3>
+                        <p id="number-question">Quantas figuras você vê?</p>
+                        <div id="number-target" class="quantity-target" aria-label="Quantidade do desafio">🍎 🍎 🍎
+                        </div>
+                        <div id="number-options" class="game-options"></div>
+                        <div id="number-feedback" class="feedback" aria-live="polite"></div>
+                    </article>
+                </div>
+
+                <div class="game-actions">
+                    <button id="reset-games" class="btn btn-outline" type="button">↻ Reiniciar</button>
+                    <button id="new-challenges" class="btn btn-primary" type="button">🎲 Novos Desafios</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <a class="brand footer-brand" href="#inicio">
+                    <span class="brand-icon" aria-hidden="true">🌈</span>
+                    <span>Aprender Brincando</span>
+                </a>
+                <p>Aprender, explorar e sorrir todos os dias. 💛</p>
+            </div>
+            <nav aria-label="Navegação do rodapé">
+                <a href="#inicio">Início</a>
+                <a href="#rotina">Rotina</a>
+                <a href="#jogos">Jogos</a>
+            </nav>
+            <p class="copyright">Aprender Brincando © 2026</p>
+        </div>
+    </footer>
+
+    <div id="confetti" class="confetti-container" aria-hidden="true"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
